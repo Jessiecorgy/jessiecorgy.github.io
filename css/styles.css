@@ -226,7 +226,7 @@ section a {
 
 /* links */
 section.grid_12.alpha.omega a:link {
-float: center;
+float: left;
 font-size: .75em;
 }
 
