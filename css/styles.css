@@ -1,0 +1,109 @@
+/* Your Website Styles */
+
+header.grid_12.alpha.omega {
+	height: 113px;
+}
+
+.main-content {
+	text-align: center;
+}
+
+.main-nav-wrapper {
+	position: fixed;
+	left: 0px;
+	background-color: rgba(255,255,255,.9);
+	width: 1634px;
+	padding: 30px 10px 5px 10px;
+	text-transform: lowercase;
+	display: block;
+	border-bottom: solid 1px #c5c5c5;
+	padding-top: 20px;
+
+
+}
+
+.main-nav-wrapper a {
+	padding-right: 20px; 
+	font-style: italic;
+}
+
+
+
+h1 {
+	text-align: center;
+	margin-top: 50px;
+	font-size: 4em;
+	font-family: 'Alex Brush', cursive;
+}
+
+section .main-content {
+	text-align: center;
+}
+
+
+
+
+/* typgraphy */
+
+
+/* img */
+img {
+	width: 460px;
+	height: 460px;
+	margin-top: 20px;
+}
+
+#gd-img {
+	margin-left: 35px;
+}
+
+#jd-img {
+	margin-right: 35px;
+}
+
+/* links */
+a:link {
+	text-decoration: none;
+
+}
+
+.main-nav-wrapper a:link {
+	color: #c5c5c5;
+}
+
+.main-nav-wrapper a:hover {
+	color: #666;
+}
+
+.grid_12 a:hover {
+color: #ccc;
+}
+
+	
+.grid_12 a {
+	text-transform: uppercase;
+	color: #242424;
+}
+
+
+/* Media Queries */
+
+@media only screen and (min-width: 1024px) {
+  /* Add your custom styles here for Desktop */
+}
+@media only screen and (max-width: 1023px) {
+	
+  /* Add your custom styles here for Tablet */
+}
+@media only screen and (max-width: 640px) {
+  /* Add your custom styles here for Mobile */
+#jd-img {
+	display:none;
+}
+
+@media only screen and (max-width: 480px) {
+  /* Add your custom styles here for smaller Mobile */
+}
+#jd-img {
+	display:none;
+}
