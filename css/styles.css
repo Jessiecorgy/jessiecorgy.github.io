@@ -70,7 +70,8 @@ a:active {
 
 }
 
-.main-nav-wrapper a:link {
+.main-nav-wrapper a:link, 
+.main-nav-wrapper a:visited {
 	color: #c5c5c5;
 }
 
