@@ -71,12 +71,16 @@ a:active {
 }
 
 .main-nav-wrapper a:link, 
-.main-nav-wrapper a:visited {
+.main-nav-wrapper a:visited, {
 	color: #c5c5c5;
 }
 
 .main-nav-wrapper a:hover {
 	color: #666;
+}
+
+.main-nav-wrapper a:active {
+	color: #c5c5c5;
 }
 
 .grid_12 a:hover {
