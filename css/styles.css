@@ -22,10 +22,6 @@ header.grid_12.alpha.omega {
 
 }
 
-.main-nav-wrapper a {
-	padding-right: 20px; 
-	font-style: italic;
-}
 
 
 
@@ -62,6 +58,14 @@ img {
 }
 
 /* links */
+
+.main-nav-wrapper a {
+	padding-right: 10px; 
+	font-style: italic;
+	font-size: .85em;
+}
+
+
 a:link,
 a:visited,
 a:hover,
@@ -71,7 +75,8 @@ a:active {
 }
 
 .main-nav-wrapper a:link, 
-.main-nav-wrapper a:visited {
+.main-nav-wrapper a:visited,
+.main-nav-wrapper a:active {
 	color: #c5c5c5;
 }
 
@@ -162,6 +167,11 @@ font-size: .75em;
   /* Add your custom styles here for smaller Mobile */
 }
 
+
+header.grid_12.alpha.omega {
+	height: 90px;
+}
+
 div.main-div-wrapper,
 div.container,
 header.grid_12.alpha.omega,
@@ -180,9 +190,11 @@ section.grid_6.alpha {
 	border-bottom: solid 1px #c5c5c5;
 	padding-top: 20px;
 
-
 }
 
+section.grid_6.alpha {
+	height: 320px;
+}
 /* Image */
 #jd-img {
 	display:none;
@@ -194,16 +206,31 @@ section.grid_6.alpha {
  	margin-left: 0;
  }
 
+
  /* Typography */
+
+
 
  #media-id {
 	width: 320px;
 	font-size: 2.75em;
 }
 
+section.grid_12.alpha.omega {
+	font-size: 1.05em;
+}
+
+section a {
+	margin-bottom: -10px;
+}
 
 /* links */
 section.grid_12.alpha.omega a:link {
-float: left;
+float: center;
 font-size: .75em;
+}
+
+section a:nth-child(2) {
+
+	text-indent: 53px;
 }
