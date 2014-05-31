@@ -302,8 +302,8 @@ h1 {
  	font-size: 2.5em;
  }
 
- footer p {
-	font-size: .55em;
+ footer {
+ 	display:none;
 	
 }
 
