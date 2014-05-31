@@ -26,6 +26,7 @@ a {
 header.grid_12.alpha.omega {
 	height: 113px;
 	width: 100%;
+	margin-top: 20px;
 }
 
 section.grid_12.alpha.omega {
@@ -172,6 +173,11 @@ color: #ccc;
 /*body {
 	background: blue;
 }*/
+header.grid_12.alpha.omega {
+	height: 113px;
+	width: 100%;
+	margin-top: 20px;
+}
 
  .main-nav-wrapper {
 	position: fixed;
@@ -206,6 +212,12 @@ margin-bottom: 50px;
 /*body {
 	background: red;
 }*/
+header.grid_12.alpha.omega {
+	height: 113px;
+	width: 100%;
+	margin-top: 20px;
+}
+
 
  section.grid_12.alpha.omega {
  	margin-top: 5px;
