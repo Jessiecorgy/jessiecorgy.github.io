@@ -150,6 +150,7 @@ color: #ccc;
 .grid_12 a {
 	text-transform: uppercase;
 	color: #242424;
+	font-size: 100%;
 }
 
 
@@ -299,6 +300,7 @@ h1 {
 
 /*LINKS */
 .grid_12 a:link {
-	font-size: .85em;
+	font-size: .65em;
 }
-}
+
+
