@@ -291,10 +291,14 @@ h1 {
 	font-size: .55em;
 	
 }
+footer {
+	display: none;
+}
 .main-nav-wrapper a {
 	padding-right: 10px; 
 	font-style: italic;
 	font-size: .75em;
+
 }
 
 
