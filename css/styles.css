@@ -226,7 +226,7 @@ margin-bottom: 50px;
 
 /* IMAGE */
 img#gd-img {
-	margin-top: 0px;
+	margin-top: -5px;
 }
 
 section img {
@@ -279,7 +279,7 @@ img#gd-img {
 }
 
 section img {
-margin-bottom: 20px;
+margin-bottom: 100px;
 }
 
  /* TYPE */
@@ -291,9 +291,7 @@ h1 {
 	font-size: .55em;
 	
 }
-footer {
-	display: none;
-}
+
 .main-nav-wrapper a {
 	padding-right: 10px; 
 	font-style: italic;
