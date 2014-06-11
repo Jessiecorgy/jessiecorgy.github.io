@@ -1,13 +1,18 @@
 /* Your Website Styles */
 /*GLOBAL STYLING*/
 
+.grid_12.alpha {
+	text-align: left;
+	width: 100%;
+	margin-top: 50px;
+}
 .grid_12.alpha.omega p {
 	margin-top: -41px;
 }
 
 
 div.container {
-	width: 100%;
+	width: 1000px;
 	max-width: 100%;
 
 	}
@@ -19,8 +24,8 @@ nav {
 	width: 100%;
 }
 
-a {
-	font-size: 1em;
+a, p {
+	font-size: 100%;
 }
 
 header.grid_12.alpha.omega {
@@ -32,6 +37,7 @@ header.grid_12.alpha.omega {
 section.grid_12.alpha.omega {
 	width: 100%;
 	margin-top: 40px;
+	
 }
 
 footer {
@@ -41,16 +47,20 @@ footer {
 	display: block;
 	border-top: solid 1px #c5c5c5;
 	padding: 0;
+	margin-top: 120px;
 	
 }
 
 footer p {
 	font-size: .75em;
 	color: #c5c5c5;
+	text-align: center;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 }
 
+
+}
 header p {
 	margin-top: -90px;
 }
@@ -84,38 +94,57 @@ h1 {
 	margin-top: 50px;
 	font-size: 6em;
 	font-family: 'Alex Brush', cursive;
+	text-align: center;
+
 }
 
 
 /* typgraphy */
-#media-id,
-section p {
-	float: right;
-	margin-right: 50px;
+
+
+h2 + p {
+	margin-top: -10px;
 }
 
-#media-id {
-	font-size: 4em;
+h5 + p {
+	margin-top: -20px;
 }
 
-/* img */
-img#gd-img {
-	margin-top: 0px;
+h4 + p {
+	margin-top: -20px;
 }
 
-section img {
-	width: 960px;
-	margin-top: 20px;
-	float: center;
-	max-width: 100%;
-margin-bottom: 120px;
+h2, h3, p {
+	margin: 0;
+
+}
+h5 {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+	font-family: 'Alex Brush', cursive;
+	margin-bottom: 5px;
+	}
+
+
+h4 {
+	font-family: 'Open Sans' sans-serif;
 	
 }
 
-.img-gallery {
-	float: left;
-	width: 200px;
+p {
+	width: 100%;
+	font-family: 'Open Sans' sans-serif;
+	font-weight: 500;
+	font-size: .85em;
 }
+
+
+/* img */
+
+
+
 /* links */
 
 .main-nav-wrapper a {
@@ -125,6 +154,7 @@ margin-bottom: 120px;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
 }
+
 
 a:link,
 a:visited,
@@ -148,6 +178,7 @@ a:active {
 
 .grid_12 a:hover {
 color: #ccc;
+font-size: 100%;
 }
 
 	
@@ -155,10 +186,57 @@ color: #ccc;
 	text-transform: uppercase;
 	color: #242424;
 	font-size: 100%;
-font-family: 'Raleway', sans-serif;
-
 }
 
+/*color grid*/
+/* Layout for Style Tile*/
+section {
+	margin: 20px 0;
+}
+
+.color-1,
+.color-2,
+.color-3,
+.pattern-1,
+.pattern-2,
+.pattern-3 {
+	border: 1px solid #000;
+	float: left;
+	margin: 0 10px;
+	height: 50px;
+	width: 50px;
+}
+
+.color-1 {
+	background:#D35533;
+	margin-top: -15px;
+}
+
+.color-2 {
+	background: black;
+	margin-top: -15px;
+}
+.color-3 {
+	background: white;
+	margin-top: -15px;
+}
+
+.color-4 {
+	background: blue;
+}
+
+.color-5 {
+	background: ;
+}
+
+.color-6 {
+	background: ;
+}
+
+/* Show Grid */
+.showgrid {
+	background: url("../img/grid-bg.png") repeat-y;
+}
 
 /*************** Media Queries **************************************************************/
 
@@ -217,6 +295,7 @@ margin-bottom: 50px;
 /*body {
 	background: red;
 }*/
+
 header.grid_12.alpha.omega {
 	height: 113px;
 	width: 100%;
@@ -241,6 +320,9 @@ header.grid_12.alpha.omega {
 
 }
 
+.grid_12.alpha {
+	margin-top: 30px;
+}
 /* IMAGE */
 img#gd-img {
 	margin-top: -5px;
@@ -257,6 +339,10 @@ h1 {
  	font-size: 4.25em;
  }
 
+ p {
+	font-size: .8em;
+}
+
 /* LINKS */
 
 }
@@ -267,9 +353,12 @@ h1 {
 /*********************************MOBILE (below)***********************/
 @media only screen and (min-device-width: 320px) and (max-width: 479px) {
 /*GLOBAL*/
- /*body {
+/* body {
 	background: green;
 }*/
+.grid_12.alpha {
+	margin-top: 0px;
+}
 
  .main-nav-wrapper {
 	position: fixed;
@@ -283,8 +372,6 @@ h1 {
 	padding-top: 20px;
 
 }
-
-
 header.grid_12.alpha.omega {
 	margin-top: 20px;
 }
@@ -293,6 +380,9 @@ header.grid_12.alpha.omega {
  	margin-top: -30px;
  }
 
+footer {
+	margin-top: 10px;
+}
 
 /* IMAGE */
 
@@ -307,8 +397,15 @@ margin-bottom: 20px;
  /* TYPE */
 h1 {
  	font-size: 2.5em;
+
  }
 
+footer p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: .65em;
+
+}
 
 .main-nav-wrapper a {
 	padding-right: 8px; 
@@ -317,9 +414,13 @@ h1 {
 
 }
 
-footer p {
-	font-size: .65em;
+p {
+	width: 100%;
+	font-family: 'Open Sans' sans-serif;
+	font-weight: 500;
+	font-size: .75em;
 }
+
 /*LINKS */
 .grid_12 a:link {
 	font-size: .65em;

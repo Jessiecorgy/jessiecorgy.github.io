@@ -1,13 +1,10 @@
 /* Your Website Styles */
 /*GLOBAL STYLING*/
 
-.grid_12.alpha.omega p {
-	margin-top: -41px;
-}
 
 
 div.container {
-	width: 100%;
+	width: 1000px;
 	max-width: 100%;
 
 	}
@@ -21,6 +18,10 @@ nav {
 
 a {
 	font-size: 1em;
+}
+
+p {
+	font-size: .85em;
 }
 
 header.grid_12.alpha.omega {
@@ -77,7 +78,14 @@ section {
 
 } 
 
-
+section img {
+	width: 1000px;
+	margin-top: 20px;
+	float: center;
+	max-width: 100%;
+	margin-bottom: 120px;
+	
+}
 
 
 h1 {
@@ -88,34 +96,44 @@ h1 {
 
 
 /* typgraphy */
-#media-id,
-section p {
-	float: right;
-	margin-right: 50px;
+h2 + p {
+	margin-top: -10px;
 }
 
-#media-id {
-	font-size: 4em;
+h5 + p {
+	margin-top: -20px;
 }
 
-/* img */
-img#gd-img {
+h4 + p {
+	margin-top: -20px;
+}
+
+ p {
+ 	margin: 0;
+}
+
+
+p {
+	width: 100%;
+	font-family: 'Open Sans' sans-serif;
+	font-weight: 500;
+}
+
+h3 + p {
+	text-align: left;
+}
+
+h3 {
+	font-family: 'Open Sans' sans-serif;
+	font-weight: 300;
+	margin-bottom: 0px;
 	margin-top: 0px;
+	font-size: 1.25em;
 }
+/* img */
 
-section img {
-	width: 960px;
-	margin-top: 20px;
-	float: center;
-	max-width: 100%;
-margin-bottom: 120px;
-	
-}
 
-.img-gallery {
-	float: left;
-	width: 200px;
-}
+
 /* links */
 
 .main-nav-wrapper a {
@@ -125,6 +143,7 @@ margin-bottom: 120px;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
 }
+
 
 a:link,
 a:visited,
@@ -155,9 +174,10 @@ color: #ccc;
 	text-transform: uppercase;
 	color: #242424;
 	font-size: 100%;
-font-family: 'Raleway', sans-serif;
-
 }
+
+
+
 
 
 /*************** Media Queries **************************************************************/
@@ -198,13 +218,16 @@ header.grid_12.alpha.omega {
 }
 /*IMAGE*/
 img#gd-img {
-	margin-top: 0px;
+	margin-top: 30px;
 }
 section img {
 margin-bottom: 50px;
 	
 }
 
+p {
+	font-size: .85em;
+}
 }
 
 
@@ -243,7 +266,7 @@ header.grid_12.alpha.omega {
 
 /* IMAGE */
 img#gd-img {
-	margin-top: -5px;
+	margin-top: 30px;
 }
 
 section img {
@@ -255,6 +278,9 @@ margin-bottom: 40px;
  /* TYPE */
 h1 {
  	font-size: 4.25em;
+ }
+ p {
+ 	font-size: .80em;
  }
 
 /* LINKS */
@@ -269,8 +295,8 @@ h1 {
 /*GLOBAL*/
  /*body {
 	background: green;
-}*/
-
+}
+*/
  .main-nav-wrapper {
 	position: fixed;
 	left: 0px;
@@ -283,8 +309,6 @@ h1 {
 	padding-top: 20px;
 
 }
-
-
 header.grid_12.alpha.omega {
 	margin-top: 20px;
 }
@@ -309,20 +333,30 @@ h1 {
  	font-size: 2.5em;
  }
 
-
+p {
+	font-size: .75em;
+	margin-bottom: 20px;
+}
+h3 {
+	margin-top: 5px;
+	font-size: 1em;
+}
 .main-nav-wrapper a {
 	padding-right: 8px; 
 	font-style: italic;
 	font-size: .75em;
 
 }
-
 footer p {
 	font-size: .65em;
 }
+
+
+
 /*LINKS */
 .grid_12 a:link {
 	font-size: .65em;
 }
+
 
 

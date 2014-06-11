@@ -1,13 +1,78 @@
 /* Your Website Styles */
 /*GLOBAL STYLING*/
+img {
+   width: 400px; 
+  max-width: 100%;
+}
 
+li {
+  float: left;
+  list-style: none;
+  background: white;
+  
+  width: 400px; 
+  height: 400px;
+  
+  overflow: hidden; 
+  position: relative;
+  margin: 20px;
+}
+
+/* position the h3 and p inside the parent li rlative */
+h3, p {
+  position: absolute;
+    margin: 0;
+    transition: top .5s,   transition: bottom .5s;
+}
+
+/* FIRST FRAME! this is setting up the states before you hover. the offscreen look before you hover to see it */ 
+
+h3 {
+  	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	text-indent: 5px;
+	margin-top: 0px;
+
+  	top: -75px;
+  /* trans shows what is moving and how fast */ 
+
+}
+
+
+p {
+  font-family: 'Raleway', sans-serif;
+  font-size: .9em;
+  text-indent: 5px;
+}
+p {
+  bottom: -55px;
+  
+  background: rgba(255,255,255,.5) cubic-bezier (58,60,20,40);
+}
+/* SECOND FRAME! this changes the motion to after or during hover */
+li:hover p {
+  bottom: 0px;
+  background: rgba(255,255,255,.5);
+   width: 400px;
+}
+li:hover h3 {
+  top: 0;
+   background: rgba(255,255,255,.5);
+   width: 400px;
+     height: 35px;
+}
+
+.grid_12.alpha.omega {
+	width: 100%;
+	margin-top: 20px;
+}
 .grid_12.alpha.omega p {
 	margin-top: -41px;
 }
 
 
 div.container {
-	width: 100%;
+	width: 1000px;
 	max-width: 100%;
 
 	}
@@ -26,12 +91,11 @@ a {
 header.grid_12.alpha.omega {
 	height: 113px;
 	width: 100%;
-	margin-top: 20px;
 }
 
 section.grid_12.alpha.omega {
 	width: 100%;
-	margin-top: 40px;
+	margin-top: -80px;
 }
 
 footer {
@@ -66,7 +130,7 @@ section {
  .main-nav-wrapper {
 	position: fixed;
 	left: 0px;
-	background-color: rgba(255,255,255,.4);
+	background-color: rgb(255,255,255);
 	width: 100%;
 	padding: 30px 10px 5px 10px;
 	text-transform: lowercase;
@@ -84,6 +148,8 @@ h1 {
 	margin-top: 50px;
 	font-size: 6em;
 	font-family: 'Alex Brush', cursive;
+	text-align: center;
+
 }
 
 
@@ -99,23 +165,11 @@ section p {
 }
 
 /* img */
-img#gd-img {
-	margin-top: 0px;
-}
 
-section img {
-	width: 960px;
-	margin-top: 20px;
-	float: center;
-	max-width: 100%;
-margin-bottom: 120px;
-	
-}
 
-.img-gallery {
-	float: left;
-	width: 200px;
-}
+
+
+
 /* links */
 
 .main-nav-wrapper a {
@@ -125,6 +179,7 @@ margin-bottom: 120px;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
 }
+
 
 a:link,
 a:visited,
@@ -146,18 +201,10 @@ a:active {
 }
 
 
-.grid_12 a:hover {
-color: #ccc;
-}
+
 
 	
-.grid_12 a {
-	text-transform: uppercase;
-	color: #242424;
-	font-size: 100%;
-font-family: 'Raleway', sans-serif;
 
-}
 
 
 /*************** Media Queries **************************************************************/
@@ -225,7 +272,7 @@ header.grid_12.alpha.omega {
 
 
  section.grid_12.alpha.omega {
- 	margin-top: 5px;
+ 	margin-top: -30px;
  }
 
  .main-nav-wrapper {
@@ -283,14 +330,12 @@ h1 {
 	padding-top: 20px;
 
 }
-
-
 header.grid_12.alpha.omega {
 	margin-top: 20px;
 }
 
  section.grid_12.alpha.omega {
- 	margin-top: -30px;
+ 	margin-top: -50px;
  }
 
 
@@ -309,6 +354,9 @@ h1 {
  	font-size: 2.5em;
  }
 
+ footer p {
+ 	font-size: .65em;
+ }
 
 .main-nav-wrapper a {
 	padding-right: 8px; 
@@ -317,9 +365,7 @@ h1 {
 
 }
 
-footer p {
-	font-size: .65em;
-}
+
 /*LINKS */
 .grid_12 a:link {
 	font-size: .65em;
